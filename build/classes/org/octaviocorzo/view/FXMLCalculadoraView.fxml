@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="482.0" prefWidth="251.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.octaviocorzo.controller.FXMLCalculadoraController">
+    <stylesheets>
+        <URL value="@fxmlcalculadoraview.css" />
+    </stylesheets>
+   <children>
+      <GridPane layoutX="18.0" layoutY="146.0" prefHeight="314.0" prefWidth="215.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button id="boton-cambiar-signo" fx:id="btnCambiarSigno" mnemonicParsing="false" onAction="#clicCambiarSigno" prefHeight="50.0" prefWidth="50.0" text="+/-" GridPane.rowIndex="5">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="btnUno" mnemonicParsing="false" onAction="#clicUno" prefHeight="50.0" prefWidth="50.0" styleClass="botones-numericos" text="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="btnCuatro" mnemonicParsing="false" onAction="#clicCuatro" prefHeight="50.0" prefWidth="50.0" styleClass="botones-numericos" text="4" GridPane.rowIndex="3">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="btnSiete" mnemonicParsing="false" onAction="#clicSiete" prefHeight="50.0" prefWidth="50.0" styleClass="botones-numericos" text="7" GridPane.rowIndex="2">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+            <Button id="boton-ac" fx:id="btnLimpiar" mnemonicParsing="false" onAction="#clicLimpiar" prefHeight="50.0" prefWidth="100.0" text="AC" GridPane.columnSpan="2">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="btnCero" mnemonicParsing="false" onAction="#clicCero" prefHeight="50.0" prefWidth="50.0" styleClass="botones-numericos" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+            <Button id="boton-punto" fx:id="btnPunto" mnemonicParsing="false" onAction="#clicPunto" prefHeight="50.0" prefWidth="50.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+            <Button id="boton-porcentaje" fx:id="btnPorcentaje" mnemonicParsing="false" onAction="#clicPorcentaje" prefHeight="50.0" prefWidth="50.0" styleClass="botones-operadores" text="\%" GridPane.columnIndex="3">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+            <Button id="boton-division" fx:id="btnDivision" mnemonicParsing="false" onAction="#clicDivision" prefHeight="50.0" prefWidth="50.0" styleClass="botones-operadores" text="/" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="btnOcho" mnemonicParsing="false" onAction="#clicOcho" prefHeight="50.0" prefWidth="50.0" styleClass="botones-numericos" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="btnNueve" mnemonicParsing="false" onAction="#clicNueve" prefHeight="50.0" prefWidth="50.0" styleClass="botones-numericos" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+            <Button id="boton-multiplicacion" fx:id="btnMultiplicacion" mnemonicParsing="false" onAction="#clicMultiplicacion" prefHeight="50.0" prefWidth="50.0" styleClass="botones-operadores" text="*" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="btnCinco" mnemonicParsing="false" onAction="#clicCinco" prefHeight="50.0" prefWidth="55.0" styleClass="botones-numericos" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="btnSeis" mnemonicParsing="false" onAction="#clicSeis" prefHeight="50.0" prefWidth="50.0" styleClass="botones-numericos" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+            <Button id="boton-resta" fx:id="btnResta" mnemonicParsing="false" onAction="#clicResta" prefHeight="50.0" prefWidth="50.0" styleClass="botones-operadores" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="btnDos" mnemonicParsing="false" onAction="#clicDos" prefHeight="50.0" prefWidth="50.0" styleClass="botones-numericos" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="btnTres" mnemonicParsing="false" onAction="#clicTres" prefHeight="50.0" prefWidth="50.0" styleClass="botones-numericos" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+            <Button id="boton-suma" fx:id="btnSuma" mnemonicParsing="false" onAction="#clicSuma" prefHeight="50.0" prefWidth="50.0" styleClass="botones-operadores" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+            <Button id="boton-igual" fx:id="btnIgual" mnemonicParsing="false" onAction="#clicIgual" prefHeight="50.0" prefWidth="50.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+            <Button id="boton-inverso-multiplicativo" fx:id="btnReciproco" mnemonicParsing="false" onAction="#clicReciproco" prefHeight="50.0" prefWidth="50.0" styleClass="botones-operaciones-especiales" text="1/x" GridPane.rowIndex="1">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+            <Button id="boton-cuadrado" fx:id="btnElevarCuadrado" mnemonicParsing="false" onAction="#clicElevarCuadrado" prefHeight="50.0" prefWidth="50.0" styleClass="botones-operaciones-especiales" text="x²" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+            <Button id="boton-raiz-cuadrada" fx:id="btnRaizCuadrada" mnemonicParsing="false" onAction="#clicRaizCuadrada" prefHeight="50.0" prefWidth="50.0" styleClass="botones-operaciones-especiales" text="√x" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+            <Button id="boton-del" fx:id="btnDel" mnemonicParsing="false" onAction="#clicDel" prefHeight="50.0" prefWidth="50.0" text="DEL" GridPane.columnIndex="2">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+      <Label fx:id="lblPantalla" alignment="CENTER_RIGHT" layoutX="18.0" layoutY="49.0" prefHeight="82.0" prefWidth="215.0" style="-fx-background-color: #CCCCCC;">
+         <font>
+            <Font name="SansSerif Regular" size="42.0" />
+         </font>
+      </Label>
+      <MenuBar layoutX="18.0" layoutY="14.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

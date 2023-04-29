@@ -1,0 +1,123 @@
+/**
+ *
+ * @author Octavio Corzo
+ * @date 21/03/2022
+ * carné: 2021084
+ * IN5BM
+ * Grupo: 2 (Lunes)
+ */
+
+.mainFxmlClass {
+
+}
+
+#boton-porcentaje{
+  -fx-background-radius: 0 12 5 0;      
+}
+
+#boton-igual {
+    -fx-background-color:#D4AC0D;
+    -fx-background-radius: 5 0 15 0;
+}
+
+.botones-operadores{
+    -fx-background-color:#E74C3C;
+    -fx-text-fill: #FFFFFF;
+}
+
+#boton-ac{
+    -fx-background-color: orangered;
+    -fx-text-fill: white;
+    -fx-background-radius: 15 0 5 0;
+}
+
+#boton-del{
+    -fx-text-fill: red;
+}
+
+.botones-numericos{
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.botones-numericos:hover{
+    -fx-font-size: 20px;
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+}
+
+#boton-igual:hover{
+    -fx-font-size: 20px;
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+}
+
+.botones-operadores:hover{
+    -fx-font-size: 20px;
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+}
+
+#boton-ac:hover{
+    -fx-font-size: 20px;
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+}
+
+#boton-del:hover{
+    -fx-font-size: 15px;
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+}
+
+#boton-cambiar-signo{
+    -fx-background-radius: 0 5 0 15;
+}
+#boton-cambiar-signo:hover{
+    -fx-font-size: 15px;
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+
+}
+
+#boton-inverso-multiplicativo:hover{
+    -fx-font-size: 17px;
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+}
+
+#boton-cuadrado:hover{
+    -fx-font-size: 17px;
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+}
+
+#boton-raiz-cuadrada:hover{
+    -fx-font-size: 17px;
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+}
+
+#boton-punto:hover{
+    -fx-font-size: 15px;
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+}
+
+AnchorPane{
+    -fx-background-color: #2C3E50;
+}
+
+
+#boton-inverso-multiplicativo{
+    -fx-font-family: "Times New Roman";
+}
+
+.botones-operaciones-especiales{
+    -fx-background-color: #B3B6B7;
+}
+
+
+
+
+
